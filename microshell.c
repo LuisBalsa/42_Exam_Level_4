@@ -25,7 +25,7 @@ int	cd(char *dir, int i)
 		return (err(BAD, NULL));
 	if (chdir(dir) == -1)
 		return (err(CD, dir));
-	return 1;
+	return 0;
 }
 
 int	exec(char **token, char **env, int i, int has_pipe)
